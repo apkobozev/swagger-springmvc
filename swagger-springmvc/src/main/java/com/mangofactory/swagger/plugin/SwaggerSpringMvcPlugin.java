@@ -460,4 +460,20 @@ public class SwaggerSpringMvcPlugin {
     apiListingReferenceScanner.setIncludePatterns(this.includePatterns);
     return apiListingReferenceScanner;
   }
+
+  public SwaggerSpringMvcPlugin swaggerApiResourceListing(SwaggerApiResourceListing swaggerApiResourceListing) {
+    this.swaggerApiResourceListing = swaggerApiResourceListing;
+    return this;
+  }
+
+  public SwaggerSpringMvcPlugin apiListingReferenceScanner(ApiListingReferenceScanner apiListingReferenceScanner) {
+    this.apiListingReferenceScanner = apiListingReferenceScanner;
+    return this;
+  }
+
+  public SwaggerSpringMvcPlugin swaggerGlobalSettings(SwaggerGlobalSettings swaggerGlobalSettings) {
+    this.swaggerGlobalSettings = swaggerGlobalSettings;
+    return this;
+  }
+
 }
